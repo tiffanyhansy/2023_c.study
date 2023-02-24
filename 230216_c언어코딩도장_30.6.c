@@ -1,17 +1,26 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    char c1;
+    int i = 1;
 
-    do
+    for (;;)
     {
-        scanf("%c", &c1);
+        if (i % 10 != 3)
+        {
+            i++;
+            continue;
+        }
+
+        if (i > 103) 
+            break;
+        
+        
+        printf("%d  ", i);
+        i++;
     }
-
-    while (c1 != 'q');
-
-    printf("프로그램 종료");
+    
     return 0;
 }
