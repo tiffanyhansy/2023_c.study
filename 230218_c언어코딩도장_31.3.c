@@ -1,17 +1,22 @@
+//계단식으로 별 출력하기
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
-{
-    char c1;
+{  
+    int i, j;
 
-    do
+    for ( i = 0 ; i < 5 ; i++)
     {
-        scanf("%c", &c1);
+        for ( j = 0 ; j <= i ; j++)
+        {
+            printf("*");
+        }
+       
+        printf("\n");
     }
 
-    while (c1 != 'q');
-
-    printf("프로그램 종료");
     return 0;
 }
