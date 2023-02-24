@@ -1,17 +1,21 @@
+//사각형으로 별 출력하기
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-    char c1;
-
-    do
+    int i, j;
+    for (i = 0 ; i < 5 ; i++)
     {
-        scanf("%c", &c1);
+        for(j = 0 ; j < 5 ; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
+    printf("*");
 
-    while (c1 != 'q');
-
-    printf("프로그램 종료");
     return 0;
 }
