@@ -3,15 +3,21 @@
 
 int main()
 {
-    char c1;
+    unsigned int num1;
+    unsigned int sum = 0;
 
+    scanf("%d", &num1);
+
+    unsigned int i = 0;
     do
     {
-        scanf("%c", &c1);
-    }
+        sum += i;
+        i++;
+    } 
 
-    while (c1 != 'q');
+    while (i <= num1);
 
-    printf("프로그램 종료");
+    printf("%d\n", sum);
+
     return 0;
 }
