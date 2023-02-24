@@ -3,15 +3,13 @@
 
 int main()
 {
-    char c1;
-
-    do
+    for (int i = 1; i <= 100 ; i++)
     {
-        scanf("%c", &c1);
+        if (i % 2 != 0)
+            continue;
+        
+        printf("%d\n", i);
     }
-
-    while (c1 != 'q');
-
-    printf("프로그램 종료");
+    
     return 0;
 }
